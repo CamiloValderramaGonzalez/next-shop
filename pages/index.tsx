@@ -9,7 +9,7 @@ const HomePage: NextPage = () => {
     const { products, isLoading } = useProducts("/products");
 
     return (
-        <ShopLayout title={"Shop - Home"} pageDescription={"LA mejor Tienda"}>
+        <ShopLayout title={"Shop - Home"} pageDescription={"La mejor Tienda"}>
             <>
                 <Typography variant="h1" component="h1">
                     Home
@@ -17,6 +17,7 @@ const HomePage: NextPage = () => {
                 <Typography variant="h2" sx={{ mb: 1 }} component="h2">
                     Todos los Productos
                 </Typography>
+
                 {isLoading ? (
                     <FullScreenLoading />
                 ) : (
